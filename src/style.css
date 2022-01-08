@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    background-image: url(./restaurant-interior.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 139, 0.295);
+}
+
+#content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    height: 70px;
+    background: rgb(2, 2, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: whitesmoke;
+    margin: 0;
+    font-size: 42px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-box {
+    width: 600px;
+    height: auto;
+    background: rgba(134, 134, 221);
+    padding: 18px;
+    font-size: 24px;
+    color: whitesmoke;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+.footer {
+    background: rgb(2, 2, 99);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: whitesmoke;
+}
