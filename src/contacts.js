@@ -1,6 +1,4 @@
 export default function contacts() {
-    const content = document.querySelector('#content');
-
     const container = document.querySelector('.container');
     while (container.firstChild) {
         container.firstChild.remove();
@@ -24,6 +22,4 @@ export default function contacts() {
     contactsBox.appendChild(textContainer);
     contactsBox.appendChild(map);
     container.appendChild(contactsBox);
- 
-    return content;
 }
